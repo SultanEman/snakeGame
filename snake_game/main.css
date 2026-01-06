@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: cursive;
+  font-size: 1.3rem;
+  background-color: rgb(173, 180, 111);
+}
+
+.gamePanel {
+  padding: 1rem 4rem;
+}
+
+.gameData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  border: 10px solid #4d550c;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 10px 0px rgb(37, 41, 2), -5px -5px 10px 0px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(151, 251, 30);
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  border-radius: 1rem;
+}
+
+.item {
+  background-color: #333;
+}
+
+.food {
+  background-color: transparent;
+}
+
+#instruction-text {
+  position: absolute;
+  inset: 0;
+}
+
+.image_container {
+  width: 100%;
+  height: 80%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#instruction-text p {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
